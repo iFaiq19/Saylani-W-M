@@ -647,7 +647,7 @@ for (var i = 0; i<qua_lifi_cation.length;i++){
     document.write( i  + " .. " + qua_lifi_cation[i] + + '</br>' + '</br>');
 }
 
-            EX # 08
+            // EX # 08
 
 var st =  ['fas' , 'ahm' , 'sid'];
 var cr = ['499','388','427'];
@@ -696,7 +696,7 @@ document.write( col_or$ + '</br>');
 document.write('</br>');
 
 
-         EX # 10
+        //  EX # 10
 
 var m_t = [320,236,396,402];
 document.write('Students Marks : '+m_t + '<br>');
@@ -754,9 +754,9 @@ for ( i = 0; i < dist_$.length ; i++){
 
 
 
-         TASK 17 - 20 ( ARRAYS AND LOOP )
+        //  TASK 17 - 20 ( ARRAYS AND LOOP )
 
-           EX # 01
+        //    EX # 01
 
 var g$fg = new Array(2); 
   
