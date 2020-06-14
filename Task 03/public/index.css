@@ -1,0 +1,605 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+marquee {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fa {
+    color: white;
+}
+
+.fa>li:hover {
+    background-color: #316DD9;
+    transition: ease-in 0.3s;
+}
+
+#lines {
+    text-decoration: #427900 overline; 
+    padding-top: 6px;
+    text-align: left;
+}
+
+
+.fa>li{
+    list-style: none;
+    display: inline-block;
+    padding: 7px 10px 7px 10px;
+}
+
+#wa {
+    background-color:#0CC042 ;
+    color: white;
+    border-radius: 4px;
+    padding: 0px 1px 1px 1px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header1 {
+    background-color: #316DC3;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    font-weight: 600;
+}
+
+.header1 p {
+    padding: 0 90px;
+}
+
+.h1btn {
+    padding: 10px;
+}
+
+.header1 .button {
+    color: #427900;
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 6px 12px 6px 12px;
+    text-align: center;
+    background-color: #F5F5F5;
+    margin: 0 1px 0 1px;
+    text-decoration: none;
+    box-shadow:-1 1 #427900;
+}
+
+.header2 {
+    background-color: #F7F8FA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.logo {
+    width: 200px;
+    height: 55px;
+    margin-right: 260px;
+}
+
+.dropdown{
+    display: inline-block;
+    padding: 20px 0 10px 0;
+    padding-left: 5px;
+    position: relative;
+}
+
+#ddbutton{
+    text-decoration: none;
+    color: gray;
+    padding:8px 15px 8px 15px;
+    background-color: #F7F8FA;
+    font-size: 13px;
+    border-radius: 18px;
+    font-weight: 550;
+    border: none;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#ddbutton>i, #contentextra>i {
+    color: gray;
+    font-weight: bolder;
+}
+
+
+#content {
+    display: none;
+    text-align: left;
+}
+
+#content a, #content p{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    padding: 10px;
+    min-width: 160px;
+    font-weight: bolder;
+}
+
+#content p {
+    margin: 0;
+}
+
+.dropdown:hover #content{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    margin-left: 8px;
+}
+
+#ddbutton:hover, #ddbutton:hover>i{
+    background-color: #316DD9;
+    color: white;
+}
+
+#ddbutton.active, #ddbutton.active>i{
+    background-color: #316DD9;
+    color: white;
+}
+
+#content a:hover, #content p:hover, #contentextra:hover>i {
+    background-color: #316DD9;
+    color: white;
+}
+
+#contentextra:hover>i{
+    background-color: #316DD9;
+    color: white;
+}
+
+#educontent, #medcontent, #welcontent, #acdcontent, #doncontent, #smtcontent{
+    display: none;
+}
+
+.edu:hover #educontent{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    left: 100%;
+    top: 0;
+}
+
+.med:hover #medcontent{
+    display: block;
+    position: absolute;
+    width: 270px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    left: 100%;
+    top: 36px;
+}
+
+.wel:hover #welcontent{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    left: 100%;
+    top: 72px;
+}
+
+.acd:hover #acdcontent{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    left: 100%;
+    top: 324px;
+}
+
+.don:hover #doncontent{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    right: 100%;
+    top: 180px;
+}
+
+.smt:hover #smtcontent{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600px;
+    left: 100%;
+    top: 0;
+}
+
+#slideimg {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 115px;
+}
+
+#banner>p, #banner{
+    background-color: #2755E9;
+    color: white;
+    width: 85%;
+    margin: 10px auto 10px auto;
+    z-index: -1;
+}
+
+.intro>h1 {
+    padding-top: 16px;
+    size: 40px;
+}
+
+.intro>p{
+    padding: 0 200px 20px 200px;
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.intro, .wwrd {
+    text-align: center;
+    font-family: merriweather;
+    background-color: #F7F8FA;
+    left: 0;
+    right: 0;
+}
+
+.work {
+    background-color: #2755E9;
+    padding-left: 80px;
+    margin-top: -15px;
+    padding: 30px 0;
+}
+
+#spans{
+    display: inline-block;
+    text-align: center;
+    padding: 25px;
+    font-family: merriweather;
+    font-weight: lighter;
+    color: white;
+}
+
+#icons {
+    width: 20%;
+}
+
+.wwrd {
+    margin-top: -25px;
+    padding-top: 50px;
+}
+
+.container {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#wwrd-content {
+    width: 330px;
+    font-family: Merriweather;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #2755E9;
+    background-color: white;
+    box-shadow: 0 0 11px gray;
+    margin: 20px;
+    padding: 30px 10px;
+    font-size: 17px;
+}
+
+
+#wwrd-content img {
+    width: 20%;
+}
+
+.missions {
+    padding: 30px 50px 30px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: baseline;
+    font-family: merriweather;
+    text-align: left;
+    margin: auto;
+}
+
+.missions-div1 {
+    width: 70%;
+}
+
+#missions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#missions div {
+    padding: 10px 80px 10px 10px;
+    color: #2755E9;
+    font-weight: 800;
+    background-color: #F7F8FA;
+    width: 240px;
+    box-shadow: 0 0 1px gray;
+    margin: 10px;
+}
+
+#missions div p {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.events {
+    width: 300px;
+    z-index: -1;
+}
+
+.images {
+    text-align: center;
+    padding: 40px 0 150px 0;
+    font-family: merriweather;
+    z-index: -1;
+}
+
+.pictures>a>img {
+    padding-top: 20px;
+    width: 220px;
+}
+
+.pictures>a>img:hover {
+    opacity: 50%;
+}
+ 
+
+.footer {
+    background-color: #25272E;
+    font-size: 14px;
+    font-weight: 500px;
+    color: white;
+}
+
+.footer h4 {
+    font-family: Merriweather;
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: baseline;
+    justify-content: center;
+    padding: 30px 50px 80px 50px;
+}
+
+.footer1 div{
+    width: 350px;
+    margin: 0px 20px;
+}
+
+#fti {
+    margin-right: 4px;
+    padding: 10px 12px 10px 12px;
+    background-color: #2755E9;
+    border-radius: 50px;
+}
+
+#fi {
+    color: #528417;
+}
+
+.footer2 {
+    background-color: #2755E9;
+    padding: 10px 0 0 100px;
+    font-weight: 600px;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    height: 50px;
+}
+
+#gototop>i {    
+    background: rgba(0, 0, 0, 0.1);
+    bottom: 20px;
+    height: 50px;
+    padding: 1px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    font-size: 42px;
+}
+
+
+#gototop>i:hover {    
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 20px;
+    height: 50px;
+    padding: 1px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    font-size: 42px;
+    transition: ease-in-out 0.3s;
+}
+
+
+@media (max-width: 700px) {
+    html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header1 ul{
+        margin: 10px;
+        padding: 0;
+    }
+
+    .header1 p {
+        padding: 0 10px;
+    }
+
+    #gototop {
+        display: none;
+    }
+
+    .logo {
+        margin: 5px 100px;
+    }
+
+    .dropdown {
+        padding: 10px 5px;
+    }
+
+    #content {
+        display: none;
+    }
+
+    .dropdown:hover #content {
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background-color: white;
+        left: -20px;
+    }
+
+    .edu:hover #educontent{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        min-width: 160px;
+        top: 36px;
+        left: -10%;
+    }
+    
+    #medcontent a {
+        max-width: 160px;
+    }
+
+    .med:hover #medcontent{
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background-color: white;
+        top: 72px;
+        left: -10%;
+    }
+    
+    .wel:hover #welcontent{
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background-color: white;
+        top: 118px;
+        left: -10%;
+    }
+    
+    .acd:hover #acdcontent{
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background-color: white;
+        top: 216px;
+        left: -10%;
+    }
+    
+    .don:hover #doncontent{
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background-color: white;
+        top: 216px;
+        left: -10%;
+    }
+    
+    .smt:hover #smtcontent{
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        background-color: white;
+        font-size: 12px;
+        font-weight: 600px;
+        top: 36px;
+        left: -20%;
+    }
+    
+    #slideimg {
+        margin-top: 0;
+    }
+
+    #banner {
+        width: 100%;
+        margin: 0;
+    }
+
+    .intro {
+        margin-top: -15px;
+    }
+
+    .intro p {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .missions {
+        padding: 10px;
+    }
+
+    #missions div{
+        min-width: 230px;
+    }
+}
