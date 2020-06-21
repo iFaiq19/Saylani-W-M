@@ -1,6 +1,6 @@
 //            TASK : 06
 
-//            CHAPTER # 21 - 25 ( STRING METHODS )
+//            CHAPTER # 21 - 25
 //                   EX # 01
 
 var firstName = prompt('Enter your first name: ');
@@ -206,7 +206,7 @@ document.write('There are ' + c + ' occurences of word \'the\' .' + '<br>'  + '<
 
 
 
-//   CHAPTER 26 - 30
+//              CHAPTER 26 - 30
 //                  EX # 01
 
 var no = +prompt('enter a +ve integar : ');
@@ -281,3 +281,35 @@ else{
 
 
 
+//          CHAPTER 31 - 34
+//                  EX # 01
+
+var dAt = new Date();
+document.write(dAt + '<br>' + '<br>');
+
+
+//                  EX # 02
+
+var d = new Date();
+var Mat = d.getMonth();
+document.write('Current Month : '+Mat + '<br>' + '<br>');
+
+
+//                  EX # 03
+
+var d = new Date();
+var Day = d.toString();
+Day1 = Day.slice(0,3) ;
+document.write('Today is '+ Day1+ '<br>' + '<br>');
+ 
+
+//                  EX # 04
+
+var d = new Date();
+var Day = d.toString();
+Day1 = Day.slice(0,3);
+
+if ( Day1 === 'Saturday' || Day1 === 'Sunday'){
+    document.write('It\'s Funday!'+ '<br>' + '<br>');
+    
+}
