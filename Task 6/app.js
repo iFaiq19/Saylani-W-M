@@ -313,3 +313,67 @@ if ( Day1 === 'Saturday' || Day1 === 'Sunday'){
     document.write('It\'s Funday!'+ '<br>' + '<br>');
     
 }
+
+//                  EX # 05
+
+var d = new Date();
+var dayOfMonth = d.getDate();
+// document.write(d)
+
+if ( dayOfMonth < 16){
+        document.write('First Fifteen Days of month'+ '<br>' + '<br>');    
+}
+else{
+        document.write('Last days of month'+ '<br>' + '<br>');
+}
+
+
+//                  EX # 06
+
+var d = new Date();
+document.write('Current Date : '+ d + '<br>');
+var millsSince = d.getTime();
+document.write('elapsed millisecods since January 1 , 1970  : '+ millsSince + '<br>');
+var min = millsSince / 1000 * 60 ;
+document.write('elapsed minutes since January 1 , 1970  : '+ millsSince + '<br>' + '<br>');
+
+
+//                  EX # 07
+
+var d = new Date();
+var currentHrs = d.getHours();
+if ( currentHrs > 12 ){
+    document.write('It\'s AM' + '<br>' + '<br>');
+}
+else{
+    document.write('It\'s AM' + '<br>' + '<br>');
+}
+
+
+//                  EX # 08
+
+var w = new Date("Dec 31,2020");
+var o = w.getTime();
+document.write("Last Date : " + o + '<br>' + '<br>');
+
+
+//                  EX # 09
+
+var a$$ = new Date("Jun 18,2015");
+var b$$ = a$$.getTime();
+var c$$ = new Date();
+var d$$ = c$$.getTime();
+var e$$ = d$$ - b$$;
+var f$$ = Math.floor(e$$/(1000*60*60*24));
+document.write(f$$ + " days have passed away since1st Ramadan , 2015" + "<br>" + "<br>");
+
+
+//                  EX # 10
+
+var a$$$ = new Date(prompt("enter the refrence date : "));
+var b$$$ = a$$$.getTime();
+var c$$$ = new Date("Jan 1,2015");
+var d$$$ = c$$$.getTime();
+var e$$$ = b$$$ - d$$$ ;
+var f$$$ = Math.floor(e$$$/(1000*60));
+document.write("On refrence Date " + a$$$ +" now " + f$$$ + " seconds had passed since begining of 2015 " + "<br>" + "<br>");
