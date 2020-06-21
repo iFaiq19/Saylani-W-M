@@ -502,34 +502,32 @@ alert(result);
 
 //                 EX # 05
 
-function sq(ar)
-    {
-        return alert(ar*ar)
-    }
+function sq(ar) {
+    return alert(ar * ar)
+}
 var ar = +prompt('enter a number : ');
 sq(ar);
 
 
 //                 EX # 06
 
-function factorial(in$)
-    {
-        var fc = 1
+function factorial(in$) {
+    var fc = 1
 
-        if (in$ < 0){
-            return alert('factorial of negative number is not possible!')
-        }
-        else if (in$ === 1 || in$ === 0){
-            return alert('factorial is 1');
-        }
-        else{
-            for (var i = 1; i <= in$ ; i++){
-                fc = fc * i;
-            }
-            return alert(fc);
-        }
-
+    if (in$ < 0) {
+        return alert('factorial of negative number is not possible!')
     }
+    else if (in$ === 1 || in$ === 0) {
+        return alert('factorial is 1');
+    }
+    else {
+        for (var i = 1; i <= in$; i++) {
+            fc = fc * i;
+        }
+        return alert(fc);
+    }
+
+}
 
 var in$ = +prompt('enter a number : ');
 factorial(in$);
@@ -537,12 +535,11 @@ factorial(in$);
 
 //                  EX # 07
 
-function counting()
-    {
-        for(var i =k1 ; i <= k2 ; i++){
-             document.write(i + '<br>');
-        }
+function counting() {
+    for (var i = k1; i <= k2; i++) {
+        document.write(i + '<br>');
     }
+}
 
 var k1 = +prompt('enter first number : ');
 var k2 = +prompt('enter second number : ');
@@ -556,34 +553,31 @@ var base = +prompt('enter base : ');
 var perPendicular = +prompt('enter perpendicular : ');
 
 
-function hypoTnuse()
-    {
-        dav = square() ** 0.5
-        return dav
-        function square()
-            {
-               return  base$ = base * base;
-               return per$ = perPendicular * perPendicular;
-                hyp$ = base$ + per$;
-               return hyp$
-            }
+function hypoTnuse() {
+    dav = square() ** 0.5
+    return dav
+    function square() {
+        return base$ = base * base;
+        return per$ = perPendicular * perPendicular;
+        hyp$ = base$ + per$;
+        return hyp$
     }
+}
 
 hypoTnuse();
-document.write('Hypotnuse: ' + hypoTnuse() +  '<br>' + '<br>');
+document.write('Hypotnuse: ' + hypoTnuse() + '<br>' + '<br>');
 
 
 //                  EX # 09
 
-function areaSquare(height,width)
-    {
-        document.write('The Area is : ' + height * width);
-    }
+function areaSquare(height, width) {
+    document.write('The Area is : ' + height * width);
+}
 
 var height = +prompt('enter height : ');
 var width = +prompt('enter width : ');
 
-areaSquare(height,width);
+areaSquare(height, width);
 
 
 //                  EX # 10
@@ -591,15 +585,87 @@ areaSquare(height,width);
 var word = prompt("Enter your name: ");
 var c = "";
 
-function palindrome()
-    {
+function palindrome() {
 
-        for (var i = word.length - 1; i >= 0 ;i--){
-            c += word[i]
+    for (var i = word.length - 1; i >= 0; i--) {
+        c += word[i]
+    }
+
+    if (word === c) {
+        return alert(word + " is a palindrome");
+    }
+}
+palindrome();
+
+//                  EX # 11
+
+function cse(v) {
+
+    var s = str => str[0].toUpperCase() + str.slice(1).toLowerCase();
+    var b = v.split(" ");
+    var c = v.split(" ").map(s).join(" ");
+    console.log(c);
+
+}
+
+var v = prompt("enter the sentence");
+cse(v);
+
+
+//                  EX # 12
+
+function long(a) {
+
+    var arr = a.split(" ")
+    var c;
+    var d = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i].length > d) {
+            d = arr[i].length;
+            c = arr[i];
         }
 
-        if (word === c){
-            return alert(word + " is a palindrome");
+    }
+    // long();
+    document.write("Sentence : " + a + "<br>");
+    document.write("The longest word in sentence : " + c + "<br>" + "<br>");
+
+}
+
+var a = prompt("enter the sentence");
+f = long(a);
+
+
+//                  EX # 13
+
+function char_count(str, letter) {
+    var letter_Count = 0;
+    for (var position = 0; position < str.length; position++) {
+        if (str.charAt(position) == letter) {
+            letter_Count += 1;
         }
     }
-palindrome();
+    return a = letter_Count;
+}
+var str = prompt('sentence : ');
+var letter = prompt('give : ');
+console.log(char_count(str, letter));
+document.write('In sentence ' + str + ' the word ' + letter + ' occurs ' + a + ' times ' + '<br>');
+
+
+//                  EX # 14
+
+var r = prompt("enter the radius");
+function calcCircumference(r) {
+    document.write("The circumference is : " + (2 * 3.42 * r) + "<br>");
+
+}
+
+calcCircumference(r);
+
+function calcarea(r) {
+    document.write("The area is : " + (3.142 * (r) ** 2));
+
+}
+
+calcarea(r);
