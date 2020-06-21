@@ -88,3 +88,110 @@ document.write('Number : ' + num + '<br>');
 num = num.toString()
 nmu = num.replace('.','')
 document.write('Result : ' + nmu + '<br>' + '<br>');
+
+//                  EX # 13
+
+var sim = prompt('Enter your username : ');
+if(sim === '@' || sim === '!' ||sim === '.' ||sim === ',' ){
+    alert('Please! enter a valid username');}
+var sim = prompt('Enter your username : ');
+
+
+//                  EX # 14
+
+var A = ['cake','apple pie','cookie','chips','patties'];
+var cafu = prompt('Enter you wanna choose : ');
+cafu = cafu.toLowerCase();
+for(i=0;i<A.length;i++){
+    if(A[i] === cafu){
+        document.write(cafu + ' is available at index ' + A.indexOf(cafu) + ' in our bakery.' + '<br>' + '<br>');
+    }
+else{
+        document.write('we are sorry ' + cafu + 'is not available in our bakery!');
+        break
+    }
+}
+
+
+//                  EX # 15                                          
+
+var apo = prompt("enter your password");
+document.write("entered password ", apo, "<br>");
+
+if (apo.slice(0, 1) <= 1000000) {
+    document.write("Password cannot start with the numbers ", "<br>");
+    document.write("plz enter a valid password" + "<br>" + "<br>");
+}
+else if (apo.length <= 6) {
+    document.write("Password length cannot be less tha 6 character ", "<br>");
+    document.write("plz enter a valid password"+ "<br>" + "<br>");
+}
+for (var i=0; i < apo.length; i++){
+    switch(apo){
+        case "!" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "@" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "#" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "$" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "%" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "^" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "&" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "*" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "=" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+
+        case "+" :
+            document.write("Password should not contain special characters" + '<br>');
+            document.write("plz enter a valid password"+ "<br>" + "<br>");
+            break;
+    }
+}
+
+//                 EX # 16
+
+var university = 'University of Karachi';
+university = university.split("");
+// console.log(university);
+for (i=0 ; i < university.length ; i++){
+    document.write(university[i] + '<br>');
+}
+
+
+//                  EX # 17
+
+var en$ = prompt('enter input character : ');
+document.write('User Input : ' + en$ + '<br>');
+document.write('Last Character of Input : ' + en$.substr(-1) + '<br>' + '<br>');
