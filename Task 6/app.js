@@ -377,3 +377,62 @@ var d$$$ = c$$$.getTime();
 var e$$$ = b$$$ - d$$$ ;
 var f$$$ = Math.floor(e$$$/(1000*60));
 document.write("On refrence Date " + a$$$ +" now " + f$$$ + " seconds had passed since begining of 2015 " + "<br>" + "<br>");
+
+//                 EX # 11
+
+var a$$$$ = new Date();
+var d$$$$ = a$$$$.getHours();
+var f$$$$ = d$$$$-1;
+var c$$$$ = new Date();
+var b$$$$ = c$$$$.setHours(f$$$$);
+
+document.write("Current Date : "+a$$$$+"<br>");
+document.write("1 hour before it was : "+c$$$$+"<br>"+"<br>");
+
+
+//                  EX # 12
+
+var a7 = new Date();
+var d7 = a7.getFullYear();
+var f7 = d7-100;
+var c7 = new Date();
+var b7 = c7.setFullYear(f7);
+
+document.write("Current Date : "+a7+"<br>"+"<br>");
+alert("100 years back,it was : " + c7);
+
+
+//                  EX # 13
+
+var a4 = new Date(prompt("enter date of birth : "));
+var k4 = a4.toString();
+var l4 = k4.slice(11,15);
+var b4 = a4.getTime();
+var c4 = new Date();
+var d4 = c4.getTime();
+var e4 = d4 - b4;
+var f4 = Math.floor(e4/(1000*60*60*12*24*30));
+document.write("Your age is : " + f4 + "<br>");
+document.write("your birth year is : " + l4 + "<br>" + "<br>" );
+
+
+//                  EX # 14
+
+var hb = new Date();
+var hc = hb.toString();
+var ha = hc.slice(4,8);
+var hn = prompt("enter your name");
+var hu = +prompt("enter number of units");
+var hf = hu*16;
+
+document.write("<p style='font-size: 24px;'> K - ELECTRIC BILL</p>");
+document.write("Customer Name : "+hn+"<br>");
+document.write("Current Month : "+ha+"<br>");
+document.write("Number of units charge : "+hu+"<br>");
+document.write("Charge per unit : 16"+"<br>"+"<br>");
+document.write("Net Amount Payable (with due date) : "+hf+"<br>");
+document.write("Last Payable surcharge : 350"+"<br>");
+document.write("Gross Amount Payable(After due date) : ", + (hf+350) + "<br>");
+
+
+
