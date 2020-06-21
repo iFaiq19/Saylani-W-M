@@ -203,3 +203,38 @@ document.write(senta + '<br>');
 senta1 = senta.toLowerCase();
 c = (senta1.match(/the/g)).length;
 document.write('There are ' + c + ' occurences of word \'the\' .' + '<br>'  + '<br>');
+
+//   CHAPTER 26 - 30 ( MATH METHODS)
+
+//                  EX # 01
+
+var no = +prompt('enter a +ve integar : ');
+if( no > 0){
+        document.write("Number : "+ no +"<br>");
+        document.write("Round of value : "+ Math.round(no)  +"<br>");
+        document.write("Floor value : "+ Math.floor(no) +"<br>");
+        document.write("Ceil value : "+ Math.ceil(no) +"<br>" + "<br>");
+}
+
+
+//                  EX # 02
+
+var noo = +prompt('enter a +ve integar : ');
+if( noo < 0){
+        document.write("Number : "+ noo +"<br>");
+        document.write("Round of value : "+ Math.round(noo)  +"<br>");
+        document.write("Floor value : "+ Math.floor(noo) +"<br>");
+        document.write("Ceil value : "+ Math.ceil(noo) +"<br>" + "<br>");
+}
+
+
+//                  EX # 03
+
+var twerw = +prompt('enter a number : ');
+document.write('The absolute value of ' + twerw + ' is ' + Math.abs(twerw) + '<br>' + '<br>' );
+
+
+//                  EX # 04
+
+t = Math.random() *6 ;
+document.write("The random value of dice is : " + Math.ceil(t) + '<br>' + '<br>');
