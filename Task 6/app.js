@@ -195,3 +195,11 @@ for (i=0 ; i < university.length ; i++){
 var en$ = prompt('enter input character : ');
 document.write('User Input : ' + en$ + '<br>');
 document.write('Last Character of Input : ' + en$.substr(-1) + '<br>' + '<br>');
+
+//                  EX # 18
+
+var senta = 'The quick brown fox jumps over the lazy dog .';
+document.write(senta + '<br>');
+senta1 = senta.toLowerCase();
+c = (senta1.match(/the/g)).length;
+document.write('There are ' + c + ' occurences of word \'the\' .' + '<br>'  + '<br>');
