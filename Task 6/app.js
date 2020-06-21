@@ -499,3 +499,107 @@ function calc(num1, op, num2) {
 var result = calc(num1, op, num2);
 
 alert(result);
+
+//                 EX # 05
+
+function sq(ar)
+    {
+        return alert(ar*ar)
+    }
+var ar = +prompt('enter a number : ');
+sq(ar);
+
+
+//                 EX # 06
+
+function factorial(in$)
+    {
+        var fc = 1
+
+        if (in$ < 0){
+            return alert('factorial of negative number is not possible!')
+        }
+        else if (in$ === 1 || in$ === 0){
+            return alert('factorial is 1');
+        }
+        else{
+            for (var i = 1; i <= in$ ; i++){
+                fc = fc * i;
+            }
+            return alert(fc);
+        }
+
+    }
+
+var in$ = +prompt('enter a number : ');
+factorial(in$);
+
+
+//                  EX # 07
+
+function counting()
+    {
+        for(var i =k1 ; i <= k2 ; i++){
+             document.write(i + '<br>');
+        }
+    }
+
+var k1 = +prompt('enter first number : ');
+var k2 = +prompt('enter second number : ');
+
+counting();
+
+
+//                  EX # 08
+
+var base = +prompt('enter base : ');
+var perPendicular = +prompt('enter perpendicular : ');
+
+
+function hypoTnuse()
+    {
+        dav = square() ** 0.5
+        return dav
+        function square()
+            {
+               return  base$ = base * base;
+               return per$ = perPendicular * perPendicular;
+                hyp$ = base$ + per$;
+               return hyp$
+            }
+    }
+
+hypoTnuse();
+document.write('Hypotnuse: ' + hypoTnuse() +  '<br>' + '<br>');
+
+
+//                  EX # 09
+
+function areaSquare(height,width)
+    {
+        document.write('The Area is : ' + height * width);
+    }
+
+var height = +prompt('enter height : ');
+var width = +prompt('enter width : ');
+
+areaSquare(height,width);
+
+
+//                  EX # 10
+
+var word = prompt("Enter your name: ");
+var c = "";
+
+function palindrome()
+    {
+
+        for (var i = word.length - 1; i >= 0 ;i--){
+            c += word[i]
+        }
+
+        if (word === c){
+            return alert(word + " is a palindrome");
+        }
+    }
+palindrome();
