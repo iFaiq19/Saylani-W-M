@@ -56,3 +56,35 @@ var message = 'Ali and Sami are best friends. They play cricket and football tog
 message = message.replace(/and/g,"&");
 document.write(message + '<br>' + '<br>');
 
+//                  EX # 09
+
+var n$1 = '472';
+document.write(n$1 + '<br>');
+document.write('String' + '<br>');
+document.write(parseInt(n$1) + '<br>');
+document.write('Number' + '<br>'  +'<br>');
+
+
+//                  EX # 10
+
+var userInput = prompt('enter a word : ');
+document.write('User Input : ' + userInput + '<br>');
+document.write('Upper Case : ' + userInput.toUpperCase() + '<br>' + '<br>');
+
+
+//                  EX # 11                                                                                          
+
+
+var a = prompt("enter");
+var b =  a.slice(0,1).toUpperCase()+a.slice(1,10); 
+document.write("User input: ",a,"<br>");
+document.write("Upper case: ",b);
+
+
+//                  EX # 12
+
+var num = 35.36;
+document.write('Number : ' + num + '<br>');
+num = num.toString()
+nmu = num.replace('.','')
+document.write('Result : ' + nmu + '<br>' + '<br>');
