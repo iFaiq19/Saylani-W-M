@@ -204,8 +204,9 @@ senta1 = senta.toLowerCase();
 c = (senta1.match(/the/g)).length;
 document.write('There are ' + c + ' occurences of word \'the\' .' + '<br>'  + '<br>');
 
-//   CHAPTER 26 - 30 ( MATH METHODS)
 
+
+//   CHAPTER 26 - 30
 //                  EX # 01
 
 var no = +prompt('enter a +ve integar : ');
@@ -238,3 +239,45 @@ document.write('The absolute value of ' + twerw + ' is ' + Math.abs(twerw) + '<b
 
 t = Math.random() *6 ;
 document.write("The random value of dice is : " + Math.ceil(t) + '<br>' + '<br>');
+
+//                  EX # 05
+
+t$t = Math.random() * 2 ;
+t$tf = Math.floor(t$t)
+document.write(t$tf + '<br>');
+if(t$tf == '2'){
+    document.write('random coin value :  HEADS' + '<br>' + '<br>'  );}
+else if(t$tf == '1'){
+    document.write('random coin value :  TAILS' + '<br>' + '<br>'  );}
+
+    
+
+//                  EX # 06
+
+var lahm = Math.random()*100;
+document.write("Random number between 1 and 100 : " + Math.ceil(lahm) + '<br>' + '<br>');
+
+
+//                  EX # 07
+
+var a = prompt('enter weight : '); 
+if (a.substr(3) == "" || a.substr(3) == "kg" || a.substr(2) == "kg" || a.substr(5) == "kgs" || a.substr(4) == "kgs" || a.substr(5) == "kilograms" || a.substr(4) == "kilograms"){
+    document.write("The weight of user is : " + a + '<br>');
+}
+
+
+//                  EX # 08
+
+var g1 = Math.random() * 10;
+g1 = Math.floor(g1);
+var g2 = +prompt('enter your guess between 1 to 10 : ');
+
+if ( g2 === g1){
+    alert('Congratulations , Right Guess!');
+}
+else{
+    alert('Hard Luck try Next time !');
+}
+
+
+
